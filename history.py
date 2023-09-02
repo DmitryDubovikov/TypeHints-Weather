@@ -14,7 +14,7 @@ class WeatherStorage(Protocol):
         pass
 
 
-class PlainFileWeatherStorage:
+class PlainFileWeatherStorage(WeatherStorage):
     """Store weather in plain text file"""
 
     def __init__(self, file: Path):
